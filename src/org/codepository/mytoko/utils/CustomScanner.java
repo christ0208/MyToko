@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class CustomScanner {
     private static CustomScanner instance;
-    private Scanner scan;
+    private final Scanner scan;
+
+    private CustomScanner() {
+        scan = new Scanner(System.in);
+    }
 
     public static CustomScanner getInstance() {
         if (instance == null) {

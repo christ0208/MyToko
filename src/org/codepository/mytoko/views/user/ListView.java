@@ -8,7 +8,7 @@ import org.codepository.mytoko.views.View;
 public class ListView<T extends User> extends View {
     @Override
     public void render() {
-
+        clearScreen();
     }
 
     public void render(T user) {
@@ -20,9 +20,13 @@ public class ListView<T extends User> extends View {
         if (user instanceof Student) {
             System.out.println("Major: " + ((Student) user).getMajor());
         } else if (user instanceof Staff) {
-            System.out.println("Position: " + ((Staff) user).getPosition());
             System.out.println("Division: " + ((Staff) user).getDivision());
+            System.out.println("Position: " + ((Staff) user).getPosition());
         }
         System.out.println("");
+    }
+
+    public void printEmptyMessage() {
+        System.out.println("No data...");
     }
 }

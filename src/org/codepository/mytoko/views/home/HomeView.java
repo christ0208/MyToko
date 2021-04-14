@@ -5,6 +5,7 @@ import org.codepository.mytoko.views.View;
 public final class HomeView extends View {
     @Override
     public void render() {
+        clearScreen();
         System.out.println("Binusmaya 5 LDAP Admin Console");
         System.out.println("==============================");
         System.out.println("1. Add New User");

@@ -1,5 +1,6 @@
 package org.codepository.mytoko.repositories;
 
+import org.codepository.mytoko.models.dto.UserRemoveDto;
 import org.codepository.mytoko.models.entity.User;
 
 import java.util.Vector;
@@ -33,6 +34,10 @@ public class UserRepository extends Repository {
         this.users.add(newUser);
 
         return newUser;
+    }
+
+    public boolean remove(UserRemoveDto dto) {
+        return this.users.removeIf(d -> d.getUsername().equals(dto.getUsername()) && d.getRole().equals(dto.getRole()));
     }
 
     public static UserRepository getInstance() {

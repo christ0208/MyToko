@@ -31,7 +31,7 @@ public class Staff extends User {
 
     @Override
     public String getEmail() {
-        return this.getUsername() + "@binus.edu";
+        return this.getUsername() + "@bimaya.edu";
     }
 
     @Override

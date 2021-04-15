@@ -28,7 +28,7 @@ public class Student extends User {
 
     @Override
     public String getEmail() {
-        return this.getUsername() + "@binus.ac.id";
+        return this.getUsername() + "@bimaya.ac.id";
     }
 
     @Override

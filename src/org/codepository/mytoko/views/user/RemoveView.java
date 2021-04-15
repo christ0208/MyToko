@@ -13,7 +13,7 @@ public class RemoveView extends View {
     }
 
     public void printUsernamePrompt() {
-        System.out.print("Enter username you want to delete [must not empty]: ");
+        System.out.print("Enter username you want to delete: ");
     }
 
     public void printSuccessRemovePrompt() {
